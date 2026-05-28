@@ -408,3 +408,236 @@ while jouer_encore:
     reponse = input("\nVeux-tu rejouer ? (OUI / NON) : ").upper()
     if reponse != "OUI" and reponse != "O":
         jouer_encore = False
+            # =====================================================================
+            # 16. SAISON 3 - CHAPITRE 12 : LE CHOC DU DÉLESTAGE (NOUVEAU !)
+            # =====================================================================
+            print("\n" + "="*50)
+            print("       SAISON 3 - CHAPITRE 12 : LE CHOC DU DÉLESTAGE")
+            print("="*50 + "\n")
+            
+            print("Quelques semaines plus tard, le centre tourne à plein régime.")
+            print("Tu es en train de donner un cours magistral sur les API en Python sur Zoom depuis les USA.")
+            print("Soudain, l'image de Jérémie se coupe. Plus aucun étudiant de Kinshasa ne répond...")
+            print("Quelques minutes après, Jérémie t'envoie un message vocal sur WhatsApp :")
+            
+            afficher_dialogue("Jérémie", "Merdi, mon frère ! Gros délestage dans le quartier, SNEL a coupé le courant ! Tout le labo est éteint et les batteries des téléphones des étudiants baissent vite...")
+            
+            print(f"\nSolde actuel : {dollars} $ | Tes compétences : {competences}")
+            print("Le cours est interrompu. Que décides-tu de faire ?")
+            print("1. Acheter un groupe électrogène en urgence (Coûte 300 $ - Sécurise le centre physiquement).")
+            print("2. Passer en mode 'Mobile First' (Gratuit - Tu demandes aux étudiants de suivre le cours sur leur téléphone avec la 4G).")
+            print("3. Reporter la session à demain (Gratuit - Tu annules le cours pour aujourd'hui).")
+
+            choix_delestage = input("\nEntre ton choix (1, 2 ou 3) : ")
+
+            print("\n" + "-"*30)
+            print("⚡ LE VERDICT DE LA SNEL ⚡")
+            print("-"*30)
+
+            if choix_delestage == "1":
+                if dollars >= 300:
+                    dollars -= 300
+                    competences += 15
+                    print("\n🔌 Solution radicale ! Tu envoies 300 $ par Mobile Money.")
+                    print("Jérémie court acheter un groupe électrogène. 15 minutes après, la lumière revient !")
+                    print("Les étudiants de l'ISTA crient de joie. Ton centre gagne une réputation de fer.")
+                else:
+                    print(f"\n❌ Tu n'as pas les 300 $ nécessaires (Solde : {dollars} $). Tu es obligé de reporter le cours.")
+                    competences += 5
+            elif choix_delestage == "2":
+                print("\n📱 Tu t'adaptes ! Tu coupes ta caméra et tu partages un tableau blanc léger.")
+                print("Les étudiants se connectent sur leurs téléphones. C'est difficile mais la session se termine.")
+                print("Tu gagnes des points de compétences pour ta flexibilité et ta gestion de crise !")
+                competences += 20
+            else:
+                print("\n💤 Session reportée. Les coupures font partie du quotidien à Kinshasa.")
+                print("Les étudiants sont un peu déçus, mais ils comprennent la situation.")
+                competences += 5
+
+                    # =====================================================================
+            # 17. SAISON 3 - CHAPITRE 13 : LA MONÉTISATION ET LA PUB FACEBOOK
+            # =====================================================================
+            print("\n" + "="*50)
+            print("       SAISON 3 - CHAPITRE 13 : LE BOOST DES RÉSEAUX")
+            print("="*50 + "\n")
+            
+            print("Grâce à tes Reels Facebook réguliers, ta page commence à exploser en RDC.")
+            print("Les demandes d'inscription au centre tech affluent de partout, même de Lubumbashi et Goma !")
+            print("Jérémie t'envoie un message : 'Merdi, on a une communauté en or. Mais pour grandir, il faut choisir notre modèle.'")
+            
+            print(f"\nSolde actuel : {dollars} $ | Compétences : {competences}")
+            print("Quelle stratégie choisis-tu pour développer l'audience du centre ?")
+            print("1. Investir dans la pub Facebook (Coûte 100 $ - Propulse tes Reels pour toucher 50 000 étudiants en RDC).")
+            print("2. Rendre les certificats Python payants (Rapporte +200 $, mais seuls les étudiants qui paient auront le diplôme du centre).")
+            print("3. Rester 100% gratuit et organique (Gratuit - Tu comptes uniquement sur le partage de la communauté).")
+
+            choix_pub = input("\nEntre ton choix (1, 2 ou 3) : ")
+
+            print("\n" + "-"*30)
+            print("📈 LE BILAN AUDIENCE 📈")
+            print("-"*30)
+
+            if choix_pub == "1":
+                if dollars >= 100:
+                    dollars -= 100
+                    competences += 25
+                    print("\n🔥 L'algorithme Facebook s'affole ! Ton compteur de vues explose.")
+                    print("Des vagues de nouveaux étudiants rejoignent le groupe d'apprentissage.")
+                    print("Tu gagnes une énorme visibilité en tant que jeune leader tech.")
+                else:
+                    print(f"\n❌ Pas assez de dollars ({dollars} $) pour la pub. Tu restes sur un partage classique.")
+                    competences += 10
+            elif choix_pub == "2":
+                dollars += 200
+                competences += 10
+                print("\n💰 Le centre commence à s'autofinancer ! Les premiers dollars congolais tombent.")
+                print("Certains étudiants râlent un peu, mais cela donne de la valeur à tes certifications.")
+            else:
+                print("\n🌱 Progression tranquille et solide. La communauté avance grâce au bouche-à-oreille.")
+                print("Les étudiants te respectent énormément pour ton aide totalement gratuite.")
+                competences += 15
+
+            print(f"\nStats après ce choix -> Compétences : {competences} | Solde : {dollars} $")
+    print(f"\nStats après cette crise -> Compétences : {competences} | Solde : {dollars} $")
+            # =====================================================================
+            # 18. SAISON 3 - CHAPITRE 14 : LE PREMIER HACKATHON DE KINSHASA
+            # =====================================================================
+            print("\n" + "="*50)
+            print("       SAISON 3 - CHAPITRE 14 : LE HACKATHON DE KINSHASA")
+            print("="*50 + "\n")
+            
+            print("Pour fêter les avancées du centre, tu décides de frapper un grand coup.")
+            print("Tu organises le tout premier Hackathon en ligne et en physique pour tes étudiants.")
+            print("L'objectif : coder un script Python utile pour la communauté locale en 48 heures chrono.")
+            
+            afficher_dialogue("Jérémie", "Merdi, l'ambiance est survoltée au labo ! Tout le monde veut participer. Mais pour motiver les troupes, il nous faut un prix légendaire !")
+            
+            print(f"\nSolde actuel : {dollars} $ | Compétences : {competences}")
+            print("Quel prix ou récompense décides-tu d'offrir pour ce Hackathon ?")
+            print("1. Offrir un gros cash prize (Coûte 250 $ - Le gagnant repart avec une belle somme pour financer ses projets).")
+            print("2. Partenariat d'incubation (Gratuit - Tu contactes une startup locale pour offrir un stage au vainqueur).")
+            print("3. Offrir des ressources Cloud et des accès Premium (Coûte 50 $ - Tu offres des abonnements de code pro).")
+
+            choix_hackathon_kin = input("\nEntre ton choix (1, 2 ou 3) : ")
+
+            print("\n" + "-"*30)
+            print("🏆 RÉSULTATS DU HACKATHON 🏆")
+            print("-"*30)
+
+            if choix_hackathon_kin == "1":
+                if dollars >= 250:
+                    dollars -= 250
+                    competences += 30
+                    print("\n💰 Événement historique ! Avec 250 $ en jeu, les étudiants se surpassent.")
+                    print("L'équipe gagnante crée un système d'alerte pour les embouteillages de Kinshasa.")
+                    print("Ton centre fait la une des discussions tech sur les réseaux en RDC !")
+                else:
+                    print(f"\n❌ Solde insuffisant ({dollars} $). Tu bascules automatiquement sur l'option Stage local.")
+                    competences += 15
+            elif choix_hackathon_kin == "2":
+                competences += 20
+                print("\n💼 Choix hyper pro ! Une startup de la place accepte de prendre le gagnant en stage.")
+                print("Les étudiants voient que ton centre ouvre de vraies portes vers l'emploi.")
+                print("Jérémie est fier de cette connexion avec le monde professionnel.")
+            else:
+                if dollars >= 50:
+                    dollars -= 50
+                    competences += 20
+                    print("\n💻 Les codeurs adorent les outils pro ! Les gagnants reçoivent leurs licences.")
+                    print("Ils ont désormais tout ce qu'il faut pour pousser leurs projets Python encore plus loin.")
+                else:
+                    print(f"\n❌ Même 50 $ c'est trop pour ton solde actuel. Le hackathon reste amical, l'ambiance est bonne !")
+                    competences += 10
+
+            print(f"\nStats après le Hackathon -> Compétences : {competences} | Solde : {dollars} $")
+            # =====================================================================
+            # 19. SAISON 3 - CHAPITRE 15 : LA PROPOSITION D'UNE GRANDE BANQUE
+            # =====================================================================
+            print("\n" + "="*50)
+            print("       SAISON 3 - CHAPITRE 15 : L'OFFRE INATTENDUE")
+            print("="*50 + "\n")
+            
+            print("Le succès du Hackathon et de tes Reels Facebook est remonté aux oreilles des grands directeurs.")
+            print("Le directeur de l'innovation d'une grande banque basée à Gombe t'envoie un e-mail officiel.")
+            print("Ils adorent ce que tu as bâti à distance et te font une proposition sérieuse :")
+            print("💡 'Nous voulons racheter votre concept pour en faire notre académie interne, ou financer des bourses.'")
+            
+            print(f"\nSolde actuel : {dollars} $ | Compétences : {competences}")
+            print("C'est un tournant majeur pour l'avenir de ton centre. Quelle est ta décision ?")
+            print("1. Accepter le rachat total (Rapporte +2000 $ immédiatement - La banque devient propriétaire, tu perds le contrôle).")
+            print("2. Refuser le rachat mais négocier un partenariat de bourses (Demande 100 compétences - Tu restes le boss, ils financent tes étudiants).")
+            print("3. Refuser catégoriquement (Gratuit - Tu restes 100% indépendant et autonome).")
+
+            choix_banque = input("\nEntre ton choix (1, 2 ou 3) : ")
+
+            print("\n" + "-"*30)
+            print("💼 LA STRATÉGIE CORPORATE 💼")
+            print("-"*30)
+
+            if choix_banque == "1":
+                dollars += 2000
+                print("\n💰 Le compte bancaire explose ! Tu reçois 2000 $ sur ton solde américain.")
+                print("Le centre change de nom et arbore le logo de la banque. Tu es riche, mais le projet ne t'appartient plus.")
+                print("Jérémie devient un salarié de la banque à Kinshasa.")
+            elif choix_banque == "2":
+                if competences >= 100:
+                    dollars += 500
+                    competences += 30
+                    print("\n🔥 Négociation de haut niveau ! Ton profil de codeur-entrepreneur a impressionné la banque.")
+                    print("Tu gardes le contrôle total du centre. En plus, la banque finance 500 $ de bourses pour tes meilleurs étudiants.")
+                    print("C'est le scénario parfait : indépendance et moyens financiers !")
+                else:
+                    print(f"\n❌ Tes compétences actuelles ({competences}) sont trop justes pour imposer tes conditions.")
+                    print("La banque retire son offre. Tu restes indépendant mais sans leur financement.")
+                    competences += 10
+            else:
+                competences += 20
+                print("\n✊ 'L'indépendance n'a pas de prix !' Tu refuses poliment leur argent.")
+                print("La communauté internet te salue pour ton intégrité. Tu restes le seul maître à bord.")
+                print("Jérémie te valide à 100% : 'C'est ça la vision, mon frère !'")
+
+            print(f"\nStats après les négociations -> Compétences : {competences} | Solde : {dollars} $")
+            # =====================================================================
+            # 20. SAISON 3 - CHAPITRE 16 : L'ÉPILOGUE ET LE CHOIX DU DESTIN
+            # =====================================================================
+            print("\n" + "="*50)
+            print("       SAISON 3 - CHAPITRE 16 : LE CHOIX DU DESTIN")
+            print("="*50 + "\n")
+            
+            print("L'année académique et tes projets aux USA touchent à leur fin.")
+            print("Grâce à ton travail acharné, ton diplôme en informatique est validé.")
+            print("À Kinshasa, le centre de programmation est devenu une véritable institution de référence.")
+            print("Ton père t'appelle pour faire un bilan de la situation et parler de l'avenir.")
+            
+            afficher_dialogue("Mon Père", "Mon fils, je suis tellement fier de ce que tu as accompli à distance. Les étudiants de l'ISTA et de tout Kinshasa parlent de toi. Maintenant que tu as ton diplôme américain, quelle est la suite ?")
+            
+            print(f"\n--- BILAN FINAL DE TON PARCOURS ---")
+            print(f"🧠 Compétences acquises : {competences}")
+            print(f"💰 Capital financier : {dollars} $")
+            print(f"-----------------------------------")
+            
+            print("\nQuel destin choisis-tu pour sceller la fin de la Saison 3 ?")
+            print("1. Le Grand Retour (Rentrer physiquement à Kinshasa pour inaugurer un immense Tech Hub en personne).")
+            print("2. L'Ingénieur Global (Rester bosser aux USA dans une grande entreprise tout en gérant le centre à distance avec Jérémie).")
+
+            choix_destin = input("\nEntre ton choix (1 ou 2) : ")
+
+            print("\n" + "="*50)
+            print("       🎉 LE MOT DE LA FIN 🎉")
+            print("="*50)
+
+            if choix_destin == "1":
+                print(f"\n✈️ Tu boucles tes valises et tu prends le vol retour vers l'aéroport de N'djili !")
+                print("À ton arrivée, Jérémie, ton père et des dizaines d'étudiants t'attendent avec des applaudissements.")
+                print("Tu coupes le ruban symbolique de ton nouveau centre de codage physique.")
+                print(f"Félicitations {nom_hero}, tu es revenu investir chez toi pour former la prochaine génération de génies tech en RDC ! 🇨🇩")
+            else:
+                print(f"\n🇺🇸 Tu signes ton premier contrat de travail dans une grande entreprise de la Silicon Valley.")
+                print("Tu restes basé aux USA, mais tu n'oublies pas tes racines.")
+                print("Chaque mois, tu finances le labo et tu passes des heures sur Zoom pour guider les codeurs de Kinshasa.")
+                print(f"Félicitations {nom_hero}, tu es devenu un pont solide entre la tech américaine et la jeunesse congolaise ! 🌐")
+
+            print("\n" + "="*50)
+            print("       🏆 FIN DE LA SAISON 3 : JEU TERMINÉ 🏆")
+            print("="*50)
+            print(f"Score final global -> Compétences : {competences} | Solde : {dollars} $")
